@@ -26,11 +26,20 @@ HTML / CSS / JavaScript だけで動く静的サイトで、GitHub Pages で無�
 
 ### 文言・製品情報・機能の状況を変える
 `tools/build.py` の `PRODUCTS` / `COMMON_FAQ` を編集し、`python3 tools/build.py` を実行。
-機能が完成したら、`DEV` を `'<span class="status status-ok">提供中</span>'` に変えます。
+機能の状況は4種類です（`PROTO`＝試作版に搭載、`DEV`＝開発中、`PLAN`＝検討中、`LIVE`＝提供中）。
+正式に提供を始めた機能は `LIVE` に変え、製品全体の表示は `PRODUCT_STATUS` を変えます。
 
-### 画面スクリーンショットを載せる
-実際のアプリ画面を `img/` に置き、`tools/build.py` の「画面イメージは準備中です」の箇所を `<img>` に差し替えます。
-架空の画面を実際の製品画面として載せないでください。
+### 製品画面（スクリーンショット）
+`img/screens/` に、各製品の試作版を実際に動かして撮影した画面（WebP）があります。
+- NURIQ の図面は、著作権のある実在の図面を使わず、説明用に作った架空のサンプル図面です
+- 配管見積もりシステムはアプリ内の「サンプル工事（練習用）」、見積・請求アプリは架空の会社・顧客で撮影しています
+- 画面を差し替えたら `ASSET_VER` を上げて再生成します。画面上の番号（符号）の位置は `HERO_PINS` / `DETAIL_PINS`（%指定）で調整します
+- 架空の画面を実際の製品画面として載せないでください
+
+### デザインの決まり
+- 色：Deep Navy `#17232E`／Warm White `#F4F2ED`／Bronze `#B58A62`／Slate `#69737A`（`css/site.css` 冒頭の変数）
+- 書体：IBM Plex Sans JP（Google Fonts）1種類
+- ロゴマーク：さしがね（曲尺）。`tools/build.py` の `MARK` と `img/favicon.svg`
 
 ### 公開URLが変わったとき
 `tools/build.py` の `SITE_URL` と、`404.html` 生成部分の `/craftflow-website/` を変更して再生成。
@@ -40,4 +49,4 @@ HTML / CSS / JavaScript だけで動く静的サイトで、GitHub Pages で無�
 無料プランの GitHub Pages はリポジトリを公開（Public）にする必要があります。サイトに秘密情報や顧客情報は置かないでください。
 
 ## 費用
-GitHub Pages・Google Fonts・Google フォームはすべて無料。現在の費用は 0 円です。
+GitHub Pages・Google Fonts・Google フォームはすべて無料。現在の費用は 0 円です。外部のJavaScriptライブラリは使っていません。

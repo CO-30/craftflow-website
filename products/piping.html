@@ -3,108 +3,129 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>配管見積もりシステム（仮称）｜配管工事向け ルート作成・材料拾い・見積もり支援｜CRAFTFLOW</title>
-<meta name="description" content="新築・修理・リフォームの配管工事で、ルートの作成から配管長さ・材料の拾い出し、見積もりまでを支援するシステムです。（開発中）">
-<meta name="keywords" content="配管 見積もり ソフト,配管材料 拾い出し,水道工事 見積もり">
+<title>配管見積もりシステム（仮称）｜配管ルート作成・材料拾い・見積もり｜CRAFTFLOW</title>
+<meta name="description" content="建物の間取りに配管ルートを描くと、管の長さ・継手・支持金具を集計し、見積もりと申請用の図面につなげるソフトです。新築・修理・リフォームの配管工事を想定しています。（開発中・試作版あり）">
+<meta name="keywords" content="配管 見積もり ソフト,配管材料 拾い出し,水道工事 見積もり,配管 3D">
 <link rel="canonical" href="https://co-30.github.io/craftflow-website/products/piping.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="CRAFTFLOW">
-<meta property="og:title" content="配管見積もりシステム（仮称）｜配管工事向け ルート作成・材料拾い・見積もり支援｜CRAFTFLOW">
-<meta property="og:description" content="新築・修理・リフォームの配管工事で、ルートの作成から配管長さ・材料の拾い出し、見積もりまでを支援するシステムです。（開発中）">
+<meta property="og:title" content="配管見積もりシステム（仮称）｜配管ルート作成・材料拾い・見積もり｜CRAFTFLOW">
+<meta property="og:description" content="建物の間取りに配管ルートを描くと、管の長さ・継手・支持金具を集計し、見積もりと申請用の図面につなげるソフトです。新築・修理・リフォームの配管工事を想定しています。（開発中・試作版あり）">
 <meta property="og:url" content="https://co-30.github.io/craftflow-website/products/piping.html">
 <meta property="og:image" content="https://co-30.github.io/craftflow-website/img/ogp.png">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#14213A">
+<meta name="theme-color" content="#17232E">
 <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap">
-<link rel="stylesheet" href="../css/site.css?v=2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../css/site.css?v=3">
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="../index.html" aria-label="CRAFTFLOW トップページ"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="7" fill="#F07A1F"/><path d="M22.5 10.5a8 8 0 1 0 0 11M13 16h12M21.5 12.5 25 16l-3.5 3.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>CRAFTFLOW</a>
+    <a class="brand" href="../index.html" aria-label="CRAFTFLOW トップページ"><svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 3h5v16h16v5H4z" fill="currentColor"/><path d="M9 7h2.5M9 11h3.5M9 15h2.5M13 19v-2.5M17 19v-3.5M21 19v-2.5" stroke="#17232E" stroke-width="1.2"/></svg><span>CRAFTFLOW</span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">メニュー</button>
     <nav id="site-nav" class="site-nav" aria-label="メインメニュー">
-      <ul><li><a href="../products.html" aria-current="page">製品</a></li><li><a href="../pricing.html">料金</a></li><li><a href="../faq.html">よくある質問</a></li><li class="nav-cta"><a class="btn btn-primary" href="../contact.html">導入について相談する</a></li></ul>
+      <ul><li><a href="../products.html" aria-current="page">製品</a></li><li><a href="../pricing.html">料金</a></li><li><a href="../faq.html">よくある質問</a></li><li class="nav-cta"><a href="../contact.html">お問い合わせ</a></li></ul>
     </nav>
   </div>
 </header>
 <main id="main">
 
-<section class="page-head"><div class="wrap">
-  <p class="breadcrumb"><a href="../index.html">ホーム</a> / <a href="../products.html">製品</a> / 配管見積もりシステム</p>
-  <p class="mt-0">配管工事向け ルート作成・材料拾い・見積もり支援　<span class="status status-dev">開発中</span></p>
-  <h1>配管見積もりシステム<span style="font-size:.5em;font-weight:700">（仮称）</span></h1>
-  <p>配管ルートを描けば、長さと材料が見えてくる。 新築・修理・リフォームの配管工事で、ルートの作成から配管長さ・材料の拾い出し、見積もりまでを支援するシステムです。</p>
-  <div class="btn-row" style="margin-top:24px"><a class="btn btn-primary" href="../contact.html?product=配管見積もりシステム">体験版・提供開始の案内を希望する</a></div>
+<section class="page-head product-head has-overlap"><div class="wrap">
+  <p class="breadcrumb"><a href="../index.html">ホーム</a><span aria-hidden="true">／</span><a href="../products.html">製品</a><span aria-hidden="true">／</span>配管見積もりシステム</p>
+  <p class="pf-trade">配管ルート作成・材料拾い・見積もり</p>
+  <h1 class="product-title is-long">配管見積もりシステム<span class="kari">（仮称）</span></h1>
+  <p class="pf-catch">配管を描けば、継手まで数えてくれる。</p>
+  <p class="page-lead">建物の間取りに配管ルートを描くと、管の長さ・継手・支持金具を集計し、見積もりと申請用の図面につなげるソフトです。新築・修理・リフォームの配管工事を想定しています。</p>
+  <div class="actions">
+    <a class="btn btn-bronze" href="../contact.html?product=配管見積もりシステム">先行利用・体験を相談する</a>
+    <span class="status status-dev">開発中・試作版あり</span>
+  </div>
+</div>
+</section>
+<div class="shot-overlap"><div class="wrap"><figure class="annotated">
+  <div class="screen"><img src="../img/screens/piping-plan3d.webp?v=3" alt="配管見積もりシステムの試作版で、平面図と3Dを並べて配管を作図した画面" width="1600" height="1000" fetchpriority="high"><span class="pin" style="left:17.6%;top:18.0%" aria-hidden="true">1</span><span class="pin" style="left:31.0%;top:50.0%" aria-hidden="true">2</span><span class="pin" style="left:64.0%;top:45.0%" aria-hidden="true">3</span><span class="pin" style="left:25.5%;top:90.2%" aria-hidden="true">4</span></div>
+  <ol class="legend"><li><span class="pin-n" aria-hidden="true">1</span>階ごとに間取りを作り、床下・2階も切り替え</li><li><span class="pin-n" aria-hidden="true">2</span>器具の接続口から指でなぞって配管</li><li><span class="pin-n" aria-hidden="true">3</span>描いた配管が3Dにそのまま表示される</li><li><span class="pin-n" aria-hidden="true">4</span>材料費と合計金額が画面の下に出る</li></ol>
+</figure></div></div>
+
+<section class="section" aria-labelledby="h-problems"><div class="wrap">
+  <div class="section-head"><h2 id="h-problems">こんな手間を減らします</h2></div>
+  <ul class="problem-list"><li><h3>管の長さと継手を目で数えている</h3><p>図面に定規を当てて区間ごとに測り、エルボやチーズの数を数えている。</p></li><li><h3>お客様に工事の中身が伝わりにくい</h3><p>どこをどう通すのか、平面図と言葉だけでは説明しづらい。</p></li><li><h3>申請用の図面を毎回描き直している</h3><p>排水の縦断図や給水の立面図を、工事のたびに一から作っている。</p></li></ul>
 </div></section>
 
-<section class="section"><div class="wrap">
-  <div class="section-head"><h2>解決したい課題</h2></div>
-  <ul class="issue-list"><li><span class="box" aria-hidden="true"></span><div><strong>配管の長さを数えるのが大変</strong><span>図面に定規を当てて区間ごとに長さを測り、継手の数も目で数えている。</span></div></li><li><span class="box" aria-hidden="true"></span><div><strong>お客様に工事内容が伝わりにくい</strong><span>どこにどう配管するのか、言葉と平面図だけでは説明しづらい。</span></div></li><li><span class="box" aria-hidden="true"></span><div><strong>申請書類づくりに手間がかかる</strong><span>工事のたびに届出用の図面や書類を一から用意している。</span></div></li></ul>
-</div></section>
-
-<section class="section section-mist"><div class="wrap detail-grid">
+<section class="section section-alt" aria-labelledby="h-features"><div class="wrap split">
   <div>
-    <h2 class="mt-0">主な機能</h2>
-    <p class="note">現在すべて開発中です。正式に提供を開始した機能から、このページの表示を更新します。</p>
-    <ul class="func-list"><li><span>配管ルートの作成</span><span class="status status-dev">開発中</span></li><li><span>2D・3Dでの建物と配管の表示</span><span class="status status-dev">開発中</span></li><li><span>配管長さ・材料の拾い出し</span><span class="status status-dev">開発中</span></li><li><span>見積もり作成</span><span class="status status-dev">開発中</span></li><li><span>申請・届出書類の作成支援</span><span class="status status-dev">将来対応を検討</span></li></ul>
+    <h2 id="h-features">主な機能</h2>
+    <p>試作版で動作を確かめた機能と、開発・検討中の機能を分けて記載しています。提供開始時の内容は変わる場合があります。</p>
+    <dl class="status-key">
+      <div><dt><span class="status status-proto">試作版に搭載</span></dt><dd>試作版で動作を確認済み</dd></div>
+      <div><dt><span class="status status-dev">開発中</span></dt><dd>開発を進めている機能</dd></div>
+      <div><dt><span class="status status-plan">検討中</span></dt><dd>対応を検討している機能</dd></div>
+    </dl>
   </div>
   <div>
-    <h2 class="mt-0">操作画面</h2>
-    <div class="shot"><div><strong>画面イメージは準備中です</strong>実際の製品画面ができ次第、ここに掲載します。</div></div>
+    <ul class="feature-list"><li><span>間取りと配管ルートを2Dで作成し、3Dで同時に表示</span><span class="status status-proto">試作版に搭載</span></li><li><span>管の長さ・継手・支持金具の自動集計</span><span class="status status-proto">試作版に搭載</span></li><li><span>現場で測った長さ（実測長）を反映</span><span class="status status-proto">試作版に搭載</span></li><li><span>単価を入れて見積もりを作成し、PDF・Excelで出力</span><span class="status status-proto">試作版に搭載</span></li><li><span>配管データから排水縦断図・給水立面図を作図</span><span class="status status-proto">試作版に搭載</span></li><li><span>スマートフォン・タブレットでの表示</span><span class="status status-proto">試作版に搭載</span></li><li><span>自治体ごとの申請様式への対応</span><span class="status status-dev">開発中</span></li></ul>
+    <ul class="notes"><li>申請用の図面は、提出先の自治体の様式に合っているかを確認してからお使いください。</li></ul>
   </div>
 </div></section>
 
-<section class="section"><div class="wrap detail-grid">
-  <div><h2 class="mt-0">利用イメージ</h2><p>建物の平面に沿って配管ルートを引き、3Dで確認。区間ごとの長さと継手の数を集計して、材料の発注や見積もりに使う流れを想定しています。</p></div>
-  <div><h2 class="mt-0">こんな方に</h2><ul class="plain-list"><li>水道設備業者</li><li>配管工事業者</li><li>設備工事の個人事業主・小規模会社</li></ul></div>
+<section class="section section-alt" aria-labelledby="h-gallery"><div class="wrap">
+  <div class="section-head"><h2 id="h-gallery">試作版の画面</h2><p>開発中の試作版を、説明用のサンプルデータで動かして撮影しました。</p></div>
+  <div class="gallery"><figure class="shot"><div class="screen"><img src="../img/screens/piping-parts.webp?v=3" alt="継手や支持金具を自動で集計した部品の一覧" width="1600" height="1000" loading="lazy" decoding="async"></div><figcaption>配管のつながりから、継手・支持金具の数を自動で集計。</figcaption></figure><figure class="shot"><div class="screen"><img src="../img/screens/piping-shinsei.webp?v=3" alt="配管データから作図した排水設備の縦断図" width="1600" height="1000" loading="lazy" decoding="async"></div><figcaption>配管データから作図した排水設備の縦断図。</figcaption></figure></div><div class="gallery-phone"><figure class="phone"><div class="phone-frame"><img src="../img/screens/piping-mobile.webp?v=3" alt="スマートフォンで表示した配管の作図画面" width="600" height="1298" loading="lazy" decoding="async"></div><figcaption>スマートフォンでも同じ工事を開いて確認できます。</figcaption></figure></div>
 </div></section>
 
-<section class="section section-mist"><div class="wrap">
-  <div class="section-head"><h2>料金プラン</h2></div>
-  <p class="notice">料金・提供開始時期については、お問い合わせください。</p>
-  <p><a href="../pricing.html">料金についての考え方を見る</a></p>
+<section class="section" aria-labelledby="h-flow"><div class="wrap">
+  <div class="section-head"><h2 id="h-flow">使い方の流れ</h2></div>
+  <ol class="flow"><li><h3>間取りを作る</h3><p>建物の外周をなぞると外壁になります。図面の写真やPDFを下に敷いて描くこともできます。</p></li><li><h3>器具を置く</h3><p>メーター・トイレ・キッチンなどをタップして配置します。</p></li><li><h3>配管をつなぐ</h3><p>器具の接続口から指でなぞって配管します。2Dと3Dの両方で確認できます。</p></li><li><h3>集計して見積もる</h3><p>長さ・継手・支持金具が集計され、単価を入れて見積書にします。</p></li></ol>
 </div></section>
 
-<section class="section"><div class="wrap">
-  <div class="section-head"><h2>よくある質問</h2></div>
-  <div class="faq"><details><summary>新築だけでなく修理やリフォームにも使えますか？</summary><div class="answer"><p>新築・修理・リフォームのいずれにも使えるよう設計を進めています。具体的な対応範囲は提供開始時にご案内します。</p></div></details><details><summary>製品名は決まっていますか？</summary><div class="answer"><p>現在は仮称です。正式名称は決まり次第このページでお知らせします。</p></div></details></div>
+<section class="section section-alt"><div class="wrap split">
+  <div><h2>こんな方に</h2><ul class="plain-list"><li>水道設備業者</li><li>配管工事業者</li><li>設備工事の個人事業主・小規模会社</li></ul></div>
+  <div><h2>料金</h2><p class="price-tbd">未定</p><p>料金・提供開始時期については、お問い合わせください。<a href="../pricing.html">料金についての考え方</a></p></div>
 </div></section>
-<section class="section"><div class="wrap"><div class="cta-band">
-  <div><h2>配管見積もりシステムの体験を希望する</h2><p>体験版の準備ができ次第ご連絡します。いまの業務の進め方もお聞かせください。</p></div>
-  <a class="btn btn-primary" href="../contact.html?product=配管見積もりシステム">導入について相談する</a>
-</div></div></section>
+
+<section class="section" aria-labelledby="h-pfaq"><div class="wrap narrow">
+  <div class="section-head"><h2 id="h-pfaq">よくある質問</h2></div>
+  <div class="faq"><details><summary>修理やリフォームにも使えますか？</summary><div class="answer"><p>新築・修理・リフォームのいずれにも使えるよう開発しています。具体的な対応範囲は提供開始時にご案内します。</p></div></details><details><summary>作図した申請図面をそのまま提出できますか？</summary><div class="answer"><p>試作版では、配管データから排水縦断図・給水立面図などを作図できます。提出先の自治体ごとに様式や記載事項が異なるため、そのまま提出できるかは様式との確認が必要です。対応方法は提供開始時にご案内します。</p></div></details><details><summary>製品名は決まっていますか？</summary><div class="answer"><p>現在は仮称です。正式名称は決まり次第このページでお知らせします。</p></div></details></div>
+</div></section>
+<section class="contact-block is-dark"><div class="wrap">
+  <div class="contact-inner">
+    <h2><span class="nb">配管見積もりシステムを</span><span class="nb">試してみたい方へ</span></h2>
+    <p>いまの仕事の進め方と、使っている図面や書類の形式をお知らせください。試用の進め方をご案内します。</p>
+    <div class="actions"><a class="btn btn-bronze" href="../contact.html?product=配管見積もりシステム">先行利用・体験を相談する</a><a class="link" href="../faq.html">よくある質問を見る</a></div>
+  </div>
+</div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <a class="brand" href="../index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="7" fill="#F07A1F"/><path d="M22.5 10.5a8 8 0 1 0 0 11M13 16h12M21.5 12.5 25 16l-3.5 3.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>CRAFTFLOW</a>
-        <p>建設・設備業の現場と事務をつなぐ、<br>実務に寄り添った業務支援ソフトウェア。</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html"><svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 3h5v16h16v5H4z" fill="currentColor"/><path d="M9 7h2.5M9 11h3.5M9 15h2.5M13 19v-2.5M17 19v-3.5M21 19v-2.5" stroke="#17232E" stroke-width="1.2"/></svg><span>CRAFTFLOW</span></a>
+        <p lang="en" class="motto">Tools for the people who build.</p>
+        <p>建設・設備業の小さな事業者のための業務ソフト。</p>
       </div>
-      <div><h2>製品</h2><ul>
-        <li><a href="../products/nuriq.html">NURIQ（左官）</a></li>
-        <li><a href="../products/piping.html">配管見積もりシステム</a></li>
-        <li><a href="../products/estimate.html">見積・請求アプリ</a></li>
-      </ul></div>
-      <div><h2>ご案内</h2><ul>
-        <li><a href="../products.html">製品一覧</a></li>
-        <li><a href="../pricing.html">料金</a></li>
-        <li><a href="../faq.html">よくある質問</a></li>
-      </ul></div>
-      <div><h2>お問い合わせ</h2><ul>
-        <li><a href="../contact.html">お問い合わせ・体験希望</a></li>
-      </ul></div>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <div><h2>製品</h2><ul>
+          <li><a href="../products/nuriq.html">NURIQ（左官）</a></li>
+          <li><a href="../products/piping.html">配管見積もりシステム（仮称）</a></li>
+          <li><a href="../products/estimate.html">見積・請求アプリ（仮称）</a></li>
+        </ul></div>
+        <div><h2>ご案内</h2><ul>
+          <li><a href="../products.html">製品一覧</a></li>
+          <li><a href="../pricing.html">料金</a></li>
+          <li><a href="../faq.html">よくある質問</a></li>
+          <li><a href="../contact.html">お問い合わせ・先行利用</a></li>
+        </ul></div>
+      </nav>
     </div>
-    <p class="copyright">&copy; 2026 CRAFTFLOW</p>
+    <p class="copyright">&copy; 2026 CRAFTFLOW　掲載している製品画面は開発中の試作版です。</p>
   </div>
 </footer>
-<script src="../js/config.js?v=2"></script>
-<script src="../js/site.js?v=2"></script>
+<script src="../js/config.js?v=3"></script>
+<script src="../js/site.js?v=3"></script>
 </body>
 </html>
