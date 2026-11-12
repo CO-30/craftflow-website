@@ -15,6 +15,7 @@ from html import escape
 ROOT = Path(__file__).resolve().parent.parent
 SITE_URL = "https://co-30.github.io/craftflow-website/"  # 公開URLが変わったらここを変更
 UPDATED = "2026-11-12"
+ASSET_VER = "2"  # CSS/JSを変えたら数字を上げる（キャッシュ対策）
 
 NAV = [
     ("products.html", "製品"),
@@ -212,7 +213,7 @@ def page(path, title, description, body, current=None, keywords=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap">
-<link rel="stylesheet" href="{r}css/site.css">
+<link rel="stylesheet" href="{r}css/site.css?v={ASSET_VER}">
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
@@ -252,8 +253,8 @@ def page(path, title, description, body, current=None, keywords=""):
     <p class="copyright">&copy; 2026 CRAFTFLOW</p>
   </div>
 </footer>
-<script src="{r}js/config.js"></script>
-<script src="{r}js/site.js"></script>
+<script src="{r}js/config.js?v={ASSET_VER}"></script>
+<script src="{r}js/site.js?v={ASSET_VER}"></script>
 </body>
 </html>
 '''
